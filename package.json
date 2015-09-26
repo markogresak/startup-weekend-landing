@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp",
     "page": "NODE_ENV=production gulp build && gulp deploy"
+    "deploy": "NODE_ENV=production npm run-script build",
   },
   "repository": {
     "type": "git",
