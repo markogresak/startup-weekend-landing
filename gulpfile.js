@@ -56,7 +56,10 @@ gulp.task('html', function () {
     .pipe(imageminJpegtran({progressive: true})())
     .pipe(gulp.dest('public/img'));
 
-  gulp.src('src/html/*.html')
+  gulp.src('src/CNAME')
+    .pipe(gulp.dest('public'));
+
+  gulp.src('src/html/**/*.html')
     .pipe(g.plumber())
     .pipe(g.if(isProduction, g.htmlmin({
       minifyCSS: true,
