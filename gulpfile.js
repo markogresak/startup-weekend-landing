@@ -101,7 +101,7 @@ gulp.task('clean', function () {
     });
 });
 
-gulp.task('deploy', function() {
+gulp.task('gh-pages-deploy', function() {
   gulp.src('./public/**/*')
     .pipe(g.ghPages());
 });

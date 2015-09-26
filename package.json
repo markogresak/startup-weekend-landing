@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "page": "NODE_ENV=production gulp build && gulp deploy"
     "deploy": "NODE_ENV=production npm run-script build",
+    "page": "npm run deploy && gulp gh-pages-deploy"
   },
   "repository": {
     "type": "git",
