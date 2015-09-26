@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "page": "NODE_ENV=production gulp build && gulp deploy"
   },
   "repository": {
     "type": "git",
