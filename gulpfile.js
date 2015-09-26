@@ -86,7 +86,7 @@ gulp.task('serve', function () {
  */
 gulp.task('watch', function () {
   ['js', 'less', 'css', 'html'].forEach(function (t) {
-    gulp.watch('src/' + t + '/*.' + t, [t]);
+    gulp.watch('src/' + t + '/**/*.' + t, [t]);
   });
 });
 
