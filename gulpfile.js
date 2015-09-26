@@ -101,6 +101,11 @@ gulp.task('clean', function () {
     });
 });
 
+gulp.task('deploy', function() {
+  gulp.src('./public/**/*')
+    .pipe(g.ghPages());
+});
+
 /**
  * build task:
  * Clean existing sources and copy or recompile the flies, including flags and favicon.
