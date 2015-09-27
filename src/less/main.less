@@ -100,6 +100,7 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .stories-list {
@@ -146,6 +147,31 @@ footer {
   }
 }
 
+.subscribe {
+  background: @main-color;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #fff;
+
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .email-div {
+    flex-basis: 270px;
+    margin-right: 10px;
+  }
+
+  .email {
+    width: 100% !important;
+  }
+
+  .btn-div {
+    // flex: 2 8;
+  }
+}
+
 @media (max-width: 470px) {
   .hero h1 {
     font-size: 50px !important;
@@ -162,6 +188,7 @@ footer {
 
   .books {
     flex-direction: column;
+    text-align: center;
   }
 }
 
