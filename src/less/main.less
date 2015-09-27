@@ -44,21 +44,21 @@ body {
     padding: 10px 30px;
 
     .fa {
-      margin-right: 5px;
+      margin: 0 5px;
     }
   }
 }
 
 .hero.patrick {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/2013_Picture_of_Patrick_Bet-David.jpg');
+  background-image: url('../img/patrick-bet-david.jpg');
 
-  h1 {
-    text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  .title {
+    margin-top: 30vh;
   }
+}
+
+.hero.chad {
+  background-image: src('../img/chad-mureta.jpg');
 }
 
 .story {
@@ -113,6 +113,29 @@ footer {
 
 .full-story-title {
   text-align: center;
+}
+
+.books {
+  display: flex;
+  justify-content: space-between;
+}
+
+.share {
+  text-align: center;
+
+  span {
+    margin: 0 5px;
+  }
+
+  .twitter {
+    position: relative;
+    top: 5px;
+  }
+
+  .reddit {
+    position: relative;
+    top: -2px;
+  }
 }
 
 @media (max-width: 470px) {
